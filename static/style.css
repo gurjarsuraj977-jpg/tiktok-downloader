@@ -1,0 +1,170 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    background:
+        radial-gradient(circle at top, #242424 0%, #0d0d0d 45%, #050505 100%);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    width: 100%;
+    max-width: 720px;
+    padding: 24px;
+}
+
+.card {
+    background: rgba(25, 25, 25, 0.95);
+    border: 1px solid #333;
+    border-radius: 24px;
+    padding: 45px 35px;
+    text-align: center;
+    box-shadow: 0 25px 80px rgba(0, 0, 0, 0.5);
+}
+
+.logo {
+    width: 64px;
+    height: 64px;
+    margin: 0 auto 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 18px;
+
+    background: white;
+    color: black;
+
+    font-size: 20px;
+    font-weight: 900;
+}
+
+h1 {
+    font-size: 38px;
+    margin-bottom: 12px;
+}
+
+.subtitle {
+    color: #aaa;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.input-group {
+    display: flex;
+    gap: 10px;
+}
+
+input {
+    flex: 1;
+    min-width: 0;
+
+    padding: 16px;
+
+    border-radius: 12px;
+    border: 1px solid #444;
+
+    background: #111;
+    color: white;
+
+    font-size: 15px;
+    outline: none;
+}
+
+input:focus {
+    border-color: white;
+}
+
+button {
+    border: none;
+    border-radius: 12px;
+
+    padding: 0 25px;
+
+    background: white;
+    color: black;
+
+    font-size: 15px;
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+button:hover {
+    transform: translateY(-2px);
+}
+
+button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.status {
+    margin-top: 20px;
+    color: #aaa;
+    min-height: 24px;
+}
+
+.result {
+    margin-top: 25px;
+}
+
+.success {
+    margin-bottom: 15px;
+    color: #7dff9b;
+}
+
+.download-link {
+    display: inline-block;
+
+    padding: 14px 24px;
+
+    border-radius: 12px;
+
+    background: #fff;
+    color: #000;
+
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.hidden {
+    display: none;
+}
+
+.footer {
+    text-align: center;
+    color: #777;
+    font-size: 13px;
+    margin-top: 20px;
+}
+
+@media (max-width: 600px) {
+
+    .card {
+        padding: 35px 20px;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    .input-group {
+        flex-direction: column;
+    }
+
+    button {
+        min-height: 50px;
+    }
+}
