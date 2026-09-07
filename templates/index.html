@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>TikTok Downloader</title>
+
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+
+<body>
+
+    <main class="container">
+
+        <div class="card">
+
+            <div class="logo">TT</div>
+
+            <h1>TikTok Downloader</h1>
+
+            <p class="subtitle">
+                Download publicly accessible TikTok videos you are authorized to use.
+            </p>
+
+            <div class="input-group">
+
+                <input
+                    id="urlInput"
+                    type="url"
+                    placeholder="Paste TikTok URL here..."
+                    autocomplete="off"
+                >
+
+                <button id="downloadBtn">
+                    Download
+                </button>
+
+            </div>
+
+            <div id="status" class="status"></div>
+
+            <div id="result" class="result hidden">
+
+                <div class="success">
+                    Video ready!
+                </div>
+
+                <a id="downloadLink" class="download-link">
+                    Download Video
+                </a>
+
+            </div>
+
+        </div>
+
+        <p class="footer">
+            Personal-use downloader • Temporary files only
+        </p>
+
+    </main>
+
+    <script src="/static/app.js"></script>
+
+</body>
+</html>
